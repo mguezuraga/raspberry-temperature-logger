@@ -34,7 +34,7 @@ def measure() -> str:
         conn = psycopg2.connect(connect_str)
         c = conn.cursor()
     except Exception as error:
-        logging.critical('Something went wrong trying to write to the DB: {}'.format(error))
+        logging.critical('Something went wrong trying to connect to the DB: {}'.format(error))
         sys.exit(1)
 
     while True:

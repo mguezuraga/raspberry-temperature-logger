@@ -3,7 +3,7 @@ A simple project to measure and log temperature and humidity using the DHT22 sen
 
 # Requirements
 ## Hardware
-- A Raspberry PI
+- A Raspberry PI (I've used a Raspberry Pi 3 Model B Rev 1.2)
 - A DHT sensor. I've used [this one](https://www.banggood.com/DHT22-Single-bus-Digital-Temperature-and-Humidity-Sensor-Module-Electronic-Building-Blocks-AM2302-3_3V-5V-DC-p-1457358.html?rmmds=myorder&cur_warehouse=CN) (Not an affiliate link)
 
 ## Python dependencies

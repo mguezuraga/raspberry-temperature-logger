@@ -1,6 +1,11 @@
 # raspberry-temperature-logger
 A simple project to measure and log temperature and humidity using the DHT22 sensor and a Raspberry Pi
 
+# Pictures
+
+![Raspberry Pi with sensor](img/sensor.jpg)
+
+
 # Requirements
 ## Hardware
 - A Raspberry PI (I've used a Raspberry Pi 3 Model B Rev 1.2)

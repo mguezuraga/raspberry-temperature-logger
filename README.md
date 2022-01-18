@@ -19,6 +19,8 @@ https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-loggi
 There are 2 ways to run this: Standalone (SQLite) and with a dedicated database server (PostgreSQL):
 
 ## SQLite
+
+### Steps
 1. Create a `history.db` SQLite database
 ```
 $ sqlite3 history.db
@@ -53,6 +55,8 @@ sqlite> select * from readings;
 ```
 
 ## PostgreSQL
+
+### Steps
 1. Install and set up PostgreSQL
 ```
 sudo apt install postgresql
@@ -97,3 +101,17 @@ history=# select * from readings;
 -snip-
 [etc]
 ```
+
+### Taking it further
+
+I have a Raspberry Pi 4 (used as [Pi-hole](https://pi-hole.net/)) and I've set up Grafana on it. Grafana has native support for a PostgreSQL data source, which is now connecting to the Raspberry Pi 3 to fetch data from it.
+
+The Rasbperry Pi 3 that holds the sensor has also now:
+- [Prometheus](https://prometheus.io)
+- [Node exporter](https://github.com/prometheus/node_exporter).
+
+![Diagram](img/diagram.png)
+
+The end result in Grafana looks like this:
+
+![Grafana on the Raspberry PI 4](img/grafana.jpg)
